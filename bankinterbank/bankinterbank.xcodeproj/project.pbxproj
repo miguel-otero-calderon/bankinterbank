@@ -8,10 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C1E0F60288A26AE003A4FF2 /* PostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F59288A26AE003A4FF2 /* PostPresenter.swift */; };
-		4C1E0F61288A26AE003A4FF2 /* PostLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F5A288A26AE003A4FF2 /* PostLocalDataManager.swift */; };
-		4C1E0F62288A26AE003A4FF2 /* PostProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F5B288A26AE003A4FF2 /* PostProtocols.swift */; };
 		4C1E0F63288A26AE003A4FF2 /* PostInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F5C288A26AE003A4FF2 /* PostInteractor.swift */; };
-		4C1E0F65288A26AE003A4FF2 /* PostRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F5E288A26AE003A4FF2 /* PostRemoteDataManager.swift */; };
 		4C1E0F66288A26AE003A4FF2 /* PostWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F5F288A26AE003A4FF2 /* PostWireFrame.swift */; };
 		4C1E0F6B288A2740003A4FF2 /* PostUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F6A288A2740003A4FF2 /* PostUseCase.swift */; };
 		4C1E0F6F288A27D6003A4FF2 /* InitViewControllerUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F6E288A27D6003A4FF2 /* InitViewControllerUseCase.swift */; };
@@ -29,6 +26,9 @@
 		4C1E0F93288A3831003A4FF2 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F91288A3831003A4FF2 /* PostCell.swift */; };
 		4C1E0F94288A3831003A4FF2 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1E0F92288A3831003A4FF2 /* PostCell.xib */; };
 		4C1E0F96288A45E1003A4FF2 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F95288A45E1003A4FF2 /* PostRequest.swift */; };
+		4C1E0F98288A6B03003A4FF2 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F97288A6B03003A4FF2 /* Meta.swift */; };
+		4C1E0F9A288A6C30003A4FF2 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F99288A6C30003A4FF2 /* Pagination.swift */; };
+		4C1E0F9C288A6C55003A4FF2 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F9B288A6C55003A4FF2 /* Links.swift */; };
 		4CC3ADCD288A24F100BE536E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC3ADCC288A24F100BE536E /* AppDelegate.swift */; };
 		4CC3ADCF288A24F100BE536E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC3ADCE288A24F100BE536E /* SceneDelegate.swift */; };
 		4CC3ADD4288A24F100BE536E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC3ADD2288A24F100BE536E /* Main.storyboard */; };
@@ -41,10 +41,7 @@
 		1296661A5D41C3A8EB1A0545 /* Pods-bankinterbank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bankinterbank.debug.xcconfig"; path = "Target Support Files/Pods-bankinterbank/Pods-bankinterbank.debug.xcconfig"; sourceTree = "<group>"; };
 		39B828E41F67CC363B9E9FEF /* Pods-bankinterbank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bankinterbank.release.xcconfig"; path = "Target Support Files/Pods-bankinterbank/Pods-bankinterbank.release.xcconfig"; sourceTree = "<group>"; };
 		4C1E0F59288A26AE003A4FF2 /* PostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPresenter.swift; sourceTree = "<group>"; };
-		4C1E0F5A288A26AE003A4FF2 /* PostLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocalDataManager.swift; sourceTree = "<group>"; };
-		4C1E0F5B288A26AE003A4FF2 /* PostProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProtocols.swift; sourceTree = "<group>"; };
 		4C1E0F5C288A26AE003A4FF2 /* PostInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostInteractor.swift; sourceTree = "<group>"; };
-		4C1E0F5E288A26AE003A4FF2 /* PostRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRemoteDataManager.swift; sourceTree = "<group>"; };
 		4C1E0F5F288A26AE003A4FF2 /* PostWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostWireFrame.swift; sourceTree = "<group>"; };
 		4C1E0F6A288A2740003A4FF2 /* PostUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUseCase.swift; sourceTree = "<group>"; };
 		4C1E0F6E288A27D6003A4FF2 /* InitViewControllerUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitViewControllerUseCase.swift; sourceTree = "<group>"; };
@@ -62,6 +59,9 @@
 		4C1E0F91288A3831003A4FF2 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		4C1E0F92288A3831003A4FF2 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
 		4C1E0F95288A45E1003A4FF2 /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
+		4C1E0F97288A6B03003A4FF2 /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
+		4C1E0F99288A6C30003A4FF2 /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		4C1E0F9B288A6C55003A4FF2 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 		4CC3ADC9288A24F100BE536E /* bankinterbank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bankinterbank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC3ADCC288A24F100BE536E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CC3ADCE288A24F100BE536E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,10 +90,7 @@
 				4C1E0F84288A328A003A4FF2 /* Post.storyboard */,
 				4C1E0F72288A2843003A4FF2 /* PostViewController.swift */,
 				4C1E0F59288A26AE003A4FF2 /* PostPresenter.swift */,
-				4C1E0F5A288A26AE003A4FF2 /* PostLocalDataManager.swift */,
-				4C1E0F5B288A26AE003A4FF2 /* PostProtocols.swift */,
 				4C1E0F5C288A26AE003A4FF2 /* PostInteractor.swift */,
-				4C1E0F5E288A26AE003A4FF2 /* PostRemoteDataManager.swift */,
 				4C1E0F5F288A26AE003A4FF2 /* PostWireFrame.swift */,
 			);
 			path = Post;
@@ -156,17 +153,12 @@
 		4C1E0F7E288A2DF2003A4FF2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4C1E0F7F288A2E07003A4FF2 /* Post */,
+				4C1E0F80288A2E13003A4FF2 /* Post.swift */,
+				4C1E0F97288A6B03003A4FF2 /* Meta.swift */,
+				4C1E0F99288A6C30003A4FF2 /* Pagination.swift */,
+				4C1E0F9B288A6C55003A4FF2 /* Links.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		4C1E0F7F288A2E07003A4FF2 /* Post */ = {
-			isa = PBXGroup;
-			children = (
-				4C1E0F80288A2E13003A4FF2 /* Post.swift */,
-			);
-			path = Post;
 			sourceTree = "<group>";
 		};
 		4C1E0F86288A36E6003A4FF2 /* Cells */ = {
@@ -372,6 +364,7 @@
 				4C1E0F96288A45E1003A4FF2 /* PostRequest.swift in Sources */,
 				4C1E0F63288A26AE003A4FF2 /* PostInteractor.swift in Sources */,
 				4CC3ADCD288A24F100BE536E /* AppDelegate.swift in Sources */,
+				4C1E0F9C288A6C55003A4FF2 /* Links.swift in Sources */,
 				4C1E0F66288A26AE003A4FF2 /* PostWireFrame.swift in Sources */,
 				4C1E0F83288A2EE4003A4FF2 /* PostEndpoint.swift in Sources */,
 				4CC3ADCF288A24F100BE536E /* SceneDelegate.swift in Sources */,
@@ -381,12 +374,11 @@
 				4C1E0F79288A2989003A4FF2 /* EndPoint.swift in Sources */,
 				4C1E0F60288A26AE003A4FF2 /* PostPresenter.swift in Sources */,
 				4C1E0F7D288A2D70003A4FF2 /* PostResponse.swift in Sources */,
+				4C1E0F98288A6B03003A4FF2 /* Meta.swift in Sources */,
 				4C1E0F81288A2E13003A4FF2 /* Post.swift in Sources */,
 				4C1E0F6F288A27D6003A4FF2 /* InitViewControllerUseCase.swift in Sources */,
-				4C1E0F65288A26AE003A4FF2 /* PostRemoteDataManager.swift in Sources */,
 				4C1E0F7B288A2A5B003A4FF2 /* PostService.swift in Sources */,
-				4C1E0F62288A26AE003A4FF2 /* PostProtocols.swift in Sources */,
-				4C1E0F61288A26AE003A4FF2 /* PostLocalDataManager.swift in Sources */,
+				4C1E0F9A288A6C30003A4FF2 /* Pagination.swift in Sources */,
 				4C1E0F8D288A377D003A4FF2 /* ProtocolCell.swift in Sources */,
 				4C1E0F93288A3831003A4FF2 /* PostCell.swift in Sources */,
 			);

@@ -9,26 +9,25 @@
 import Foundation
 import UIKit
 
+protocol PostWireFrameProtocol: class {
+    static func createPostModule() -> PostViewControllerProtocol
+}
+
 class PostWireFrame: PostWireFrameProtocol {
 
     class func createPostModule() -> PostViewControllerProtocol {
         
         let storyboard = UIStoryboard(name: "Post", bundle: Bundle.main)
         let view = storyboard.instantiateViewController(withIdentifier: "PostViewController") as! PostViewController
-        let presenter: PostPresenterProtocol & PostInteractorOutputProtocol = PostPresenter()
-        let interactor: PostInteractorInputProtocol & PostRemoteDataManagerOutputProtocol = PostInteractor()
-        let localDataManager: PostLocalDataManagerInputProtocol = PostLocalDataManager()
-        let remoteDataManager: PostRemoteDataManagerInputProtocol = PostRemoteDataManager()
-        let wireFrame: PostWireFrameProtocol = PostWireFrame()
+        let presenter: PostPresenterProtocol = PostPresenter()
+        let interactor: PostInteractorProtocol = PostInteractor()
+        let wireFrame :PostWireFrameProtocol = PostWireFrame()
         
         view.presenter = presenter
         presenter.view = view
         presenter.wireFrame = wireFrame
         presenter.interactor = interactor
         interactor.presenter = presenter
-        interactor.localDatamanager = localDataManager
-        interactor.remoteDatamanager = remoteDataManager
-        remoteDataManager.remoteRequestHandler = interactor
         
         return view
     }

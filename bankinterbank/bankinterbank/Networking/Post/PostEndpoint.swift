@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 enum PostEndpoint: EndPoint {
-    case getPost
+case getPost(String,Int)
     
     var apiKey: String {
         return ""
@@ -19,8 +19,16 @@ enum PostEndpoint: EndPoint {
     }
     var path: String {
         switch self {
-        case .getPost:
-            return "/public/v1/posts"
+        case .getPost(let title, let page):
+            if title.isEmpty {
+                return "/public/v1/posts"
+            } else {
+                if page <= 1 {
+                    return "/public/v1/posts?title=\(title)"
+                } else {
+                    return "/public/v1/posts?title=\(title)&page=\(page)"
+                }
+            }
         }
     }
     var method: HTTPMethod {

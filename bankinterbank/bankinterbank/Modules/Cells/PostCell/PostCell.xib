@@ -20,14 +20,14 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="buG-1m-JMS">
                         <rect key="frame" x="0.0" y="0.0" width="503" height="249"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Caj-Uo-um3" userLabel="Title Label">
-                                <rect key="frame" x="0.0" y="5" width="503" height="0.0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Caj-Uo-um3" userLabel="Title Label">
+                                <rect key="frame" x="0.0" y="10" width="503" height="0.0"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9e-H0-hFw" userLabel="Description Label">
-                                <rect key="frame" x="0.0" y="15" width="503" height="0.0"/>
+                                <rect key="frame" x="0.0" y="20" width="503" height="219"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -38,7 +38,8 @@
                             <constraint firstItem="Caj-Uo-um3" firstAttribute="leading" secondItem="buG-1m-JMS" secondAttribute="leading" id="0mj-Yr-pct"/>
                             <constraint firstAttribute="trailing" secondItem="Caj-Uo-um3" secondAttribute="trailing" id="3QA-Fu-Cjz"/>
                             <constraint firstAttribute="trailing" secondItem="D9e-H0-hFw" secondAttribute="trailing" id="Bcv-OM-jcN"/>
-                            <constraint firstItem="Caj-Uo-um3" firstAttribute="top" secondItem="buG-1m-JMS" secondAttribute="top" constant="5" id="GSi-VK-aeq"/>
+                            <constraint firstItem="Caj-Uo-um3" firstAttribute="top" secondItem="buG-1m-JMS" secondAttribute="top" constant="10" id="GSi-VK-aeq"/>
+                            <constraint firstAttribute="bottom" secondItem="D9e-H0-hFw" secondAttribute="bottom" constant="10" id="Hmv-sU-CaT"/>
                             <constraint firstItem="D9e-H0-hFw" firstAttribute="top" secondItem="Caj-Uo-um3" secondAttribute="bottom" constant="10" id="Xa7-RG-AZo"/>
                             <constraint firstItem="D9e-H0-hFw" firstAttribute="leading" secondItem="buG-1m-JMS" secondAttribute="leading" id="Z2K-Ig-mWm"/>
                         </constraints>

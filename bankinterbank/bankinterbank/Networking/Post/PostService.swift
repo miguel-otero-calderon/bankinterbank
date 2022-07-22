@@ -14,7 +14,7 @@ protocol PostServiceProtocol {
 
 class PostService: PostServiceProtocol {
     func getPost(request:PostRequest?, completion: @escaping (PostResponse?, Error?) -> Void) {
-        let endpoint:PostEndpoint = .getPost
+        let endpoint:PostEndpoint = .getPost(request?.title ?? "", request?.page ?? 1)
         
         print(endpoint.toURL())
         

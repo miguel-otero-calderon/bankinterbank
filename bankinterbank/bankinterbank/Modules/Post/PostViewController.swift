@@ -7,12 +7,21 @@
 
 import UIKit
 
+protocol PostViewControllerProtocol: class {
+    var presenter: PostPresenterProtocol? { get set }
+    func getPost(meta:Meta?, posts:[Post]? , error:Error?)
+}
+
 class PostViewController: UIViewController {
     //Outlets
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var headerTableView: UITableView!
+    @IBOutlet weak var postTableView: UITableView!
     //variables
+    var cellsHeader:[CustomCell] = []
     var cells:[CustomCell] = []
     var posts:[Post] = []
+    var pagination:Pagination?
+    var links:Links?
     
     // MARK: Properties
     var presenter: PostPresenterProtocol?
@@ -23,63 +32,85 @@ class PostViewController: UIViewController {
         super.viewDidLoad()
         configTable()
         configCells()
-        runService()
-//        loadTable()
-    }
-    func runService() {
-        let service = PostService()
-        service.getPost(request: nil) { response, error in
-            guard let postsData = response?.data else { return }
-            self.posts = []
-            for data in postsData {
-                self.posts.append(data.toModel())
-            }
-            DispatchQueue.main.async {
-                self.configCells()
-                self.loadTable()
-            }
-        }
+        let request = PostRequest(title: "",page: 1)
+        presenter?.getPost(request: request)
     }
     func configTable() {
-        self.tableView.dataSource = self
-        self.tableView.delegate = self
-        self.tableView.register(UINib(nibName: SearchBarCell.identifier, bundle: nil), forCellReuseIdentifier: SearchBarCell.identifier)
-        self.tableView.register(UINib(nibName: PostCell.identifier, bundle: nil), forCellReuseIdentifier: PostCell.identifier)
-        self.tableView.isScrollEnabled = true
-        self.tableView.tableFooterView = UIView()
+        self.headerTableView.dataSource = self
+        self.headerTableView.delegate = self
+        self.headerTableView.register(UINib(nibName: SearchBarCell.identifier, bundle: nil), forCellReuseIdentifier: SearchBarCell.identifier)
+        self.headerTableView.isScrollEnabled = false
+        self.headerTableView.tableFooterView = UIView()
+        
+        self.postTableView.dataSource = self
+        self.postTableView.delegate = self
+        self.postTableView.register(UINib(nibName: PostCell.identifier, bundle: nil), forCellReuseIdentifier: PostCell.identifier)
+        self.postTableView.isScrollEnabled = true
+        self.postTableView.tableFooterView = UIView()
     }
     func configCells() {
+        cellsHeader = []
+        cellsHeader.append(.searchBarCell(SearchBarCellData(placeHolder: "Buscar posts")))
+        
         cells = []
-        cells.append(.searchBarCell(SearchBarCellData(placeHolder: "Buscar posts")))
         for post in posts {
             cells.append(.postCell(
                 PostCellData(post: post)
             ))
         }
     }
-    func loadTable() {
-        self.tableView.reloadData()
+    func loadTable() {        
+        self.postTableView.reloadData()
     }
 }
 
 extension PostViewController: PostViewControllerProtocol {
-    // TODO: implement view output methods
+    func getPost(meta: Meta?, posts: [Post]?, error: Error?) {
+        if let error = error {
+            print(error)
+            return
+        }
+        if let posts = posts {
+            self.posts = posts
+        }
+        if let pagination = meta?.pagination, let links = meta?.links {
+            self.pagination = pagination
+            self.links = links
+        }
+        self.configCells()
+        self.loadTable()
+    }
 }
 extension PostViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if tableView == headerTableView {
+            return cellsHeader.count
+        }
         return cells.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if tableView == headerTableView {
+            let custom = cellsHeader[indexPath.row]
+            switch custom {
+            case .searchBarCell(let data):
+                let cell = tableView.dequeueReusableCell(withIdentifier: SearchBarCell.identifier, for: indexPath) as! SearchBarCell
+                cell.configure(data: data)
+                cell.delegate = self
+                return cell
+            default:
+                let cell = UITableViewCell()
+                cell.selectionStyle = .none
+                cell.backgroundColor = .clear
+                cell.contentView.backgroundColor = .clear
+                return cell
+            }
+        }
+        
         let custom = cells[indexPath.row]
         switch custom {
-        case .searchBarCell(let data):
-            let cell = tableView.dequeueReusableCell(withIdentifier: SearchBarCell.identifier, for: indexPath) as! SearchBarCell
-            cell.configure(data: data)
-            cell.delegate = self
-            return cell
         case .postCell(let data):
             let cell = tableView.dequeueReusableCell(withIdentifier: PostCell.identifier, for: indexPath) as! PostCell
             cell.configure(data: data)
@@ -96,10 +127,17 @@ extension PostViewController: UITableViewDataSource {
 }
 extension PostViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if tableView == headerTableView {
+            let cell = cellsHeader[indexPath.row]
+            switch cell {
+            case .searchBarCell(_):
+                return SearchBarCell.height
+            default :
+                return 0
+            }
+        }
         let cell = cells[indexPath.row]
         switch cell {
-        case .searchBarCell(_):
-            return SearchBarCell.height
         case .postCell(_):
             return PostCell.height
         default :
@@ -109,10 +147,12 @@ extension PostViewController: UITableViewDelegate {
 }
 extension PostViewController: SearchBarCellDelegate {
     func search(cell: SearchBarCell, filter: String, page: Int) {
-        print(filter)
+        let request = PostRequest(title: filter, page: page)
+        presenter?.getPost(request: request)
     }
     func changeText(cell: SearchBarCell, searchText: String) {
-        print(searchText)
+        let request = PostRequest(title: searchText, page: 1)
+        presenter?.getPost(request: request)
     }
 }
 extension PostViewController: PostCellDelegate {

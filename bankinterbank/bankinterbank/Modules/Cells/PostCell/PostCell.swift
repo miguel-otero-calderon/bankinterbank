@@ -37,7 +37,7 @@ class PostCell: UITableViewCell {
 }
 extension PostCell: ProtocolCell {
     static var height: CGFloat {
-        return 300
+        return UITableView.automaticDimension
     }
     
     static var identifier: String {

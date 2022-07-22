@@ -45,7 +45,7 @@ extension SearchBarCell: UISearchBarDelegate {
 }
 extension SearchBarCell: ProtocolCell {
     static var height: CGFloat {
-        return 50
+        return 60
     }
     
     static var identifier: String {

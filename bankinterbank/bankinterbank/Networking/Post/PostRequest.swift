@@ -9,4 +9,5 @@ import Foundation
 
 struct PostRequest {
     let title:String
+    let page:Int
 }

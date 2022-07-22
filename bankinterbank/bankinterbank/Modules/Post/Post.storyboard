@@ -19,17 +19,27 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPZ-yG-XjG" userLabel="Body View">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="BBg-HL-iKI">
-                                        <rect key="frame" x="20" y="0.0" width="374" height="798"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4nY-sO-Lbl" userLabel="Header Table View">
+                                        <rect key="frame" x="20" y="0.0" width="374" height="65"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="DBt-Uu-Dgx"/>
+                                        </constraints>
+                                    </tableView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="BBg-HL-iKI" userLabel="Post Table View">
+                                        <rect key="frame" x="20" y="65" width="374" height="733"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </tableView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="BBg-HL-iKI" secondAttribute="bottom" constant="20" id="6L3-c2-d4Z"/>
-                                    <constraint firstItem="BBg-HL-iKI" firstAttribute="top" secondItem="yPZ-yG-XjG" secondAttribute="top" id="LBM-s6-ihp"/>
+                                    <constraint firstItem="4nY-sO-Lbl" firstAttribute="leading" secondItem="yPZ-yG-XjG" secondAttribute="leading" constant="20" id="Opg-iE-Alg"/>
                                     <constraint firstAttribute="trailing" secondItem="BBg-HL-iKI" secondAttribute="trailing" constant="20" id="P2G-xe-glx"/>
+                                    <constraint firstAttribute="trailing" secondItem="4nY-sO-Lbl" secondAttribute="trailing" constant="20" id="REg-5z-GcQ"/>
                                     <constraint firstItem="BBg-HL-iKI" firstAttribute="leading" secondItem="yPZ-yG-XjG" secondAttribute="leading" constant="20" id="T4P-EQ-uZj"/>
+                                    <constraint firstItem="BBg-HL-iKI" firstAttribute="top" secondItem="4nY-sO-Lbl" secondAttribute="bottom" id="m1s-dd-XDE"/>
+                                    <constraint firstItem="4nY-sO-Lbl" firstAttribute="top" secondItem="yPZ-yG-XjG" secondAttribute="top" id="oep-oI-Lgp"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -43,12 +53,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="BBg-HL-iKI" id="RMI-2p-w8c"/>
+                        <outlet property="headerTableView" destination="4nY-sO-Lbl" id="iWv-U1-Jtl"/>
+                        <outlet property="postTableView" destination="BBg-HL-iKI" id="RMI-2p-w8c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="123"/>
+            <point key="canvasLocation" x="64" y="46"/>
         </scene>
     </scenes>
     <resources>
