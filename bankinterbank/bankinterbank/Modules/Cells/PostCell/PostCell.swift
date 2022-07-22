@@ -11,6 +11,10 @@ protocol PostCellDelegate {
 }
 class PostCell: UITableViewCell {
 
+    //Outlet
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var bodyLabel: UILabel!
+    
     //variables
     var data:PostCellData?
     var delegate: PostCellDelegate?
@@ -26,12 +30,14 @@ class PostCell: UITableViewCell {
     }
     func configure(data:PostCellData){
         self.data = data
+        titleLabel.text = data.post.title
+        bodyLabel.text = data.post.body
     }
     
 }
 extension PostCell: ProtocolCell {
     static var height: CGFloat {
-        return UITableView.automaticDimension
+        return 300
     }
     
     static var identifier: String {
@@ -39,5 +45,5 @@ extension PostCell: ProtocolCell {
     }
 }
 struct PostCellData {
-    
+    let post:Post
 }

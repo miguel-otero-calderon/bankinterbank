@@ -9,7 +9,7 @@ import Foundation
 
 enum CustomCell {
     case searchBarCell (SearchBarCellData)
-//    case dayCell (DayCellData)
+    case postCell (PostCellData)
 //    case titleCell (TitleCellData)
 //    case dayCheckCell (DayCheckCellData)
 //    case cancelDoneCell (CancelDoneCellData)

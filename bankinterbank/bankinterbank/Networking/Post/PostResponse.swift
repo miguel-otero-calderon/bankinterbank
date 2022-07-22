@@ -10,7 +10,7 @@ import Foundation
 struct PostResponse:Codable {
     
     let meta: Meta?
-    let data: [Post]?
+    let data: [Data]?
     
     struct Meta: Codable {
         struct Pagination:Codable {
@@ -25,10 +25,17 @@ struct PostResponse:Codable {
             let next:String?
         }
     }
-    struct Post:Codable {
+    struct Data:Codable {
         let id:Int?
         let userId:Int?
         let title:String?
         let body:String?
+        
+        func toModel() -> Post {
+            return Post(id: id ?? .zero,
+                        userId: userId ?? .zero,
+                        title: title ?? "",
+                        body: body ?? "")
+        }
     }
 }

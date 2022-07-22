@@ -12,6 +12,7 @@ class PostViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     //variables
     var cells:[CustomCell] = []
+    var posts:[Post] = []
     
     // MARK: Properties
     var presenter: PostPresenterProtocol?
@@ -22,18 +23,39 @@ class PostViewController: UIViewController {
         super.viewDidLoad()
         configTable()
         configCells()
-        loadTable()
+        runService()
+//        loadTable()
+    }
+    func runService() {
+        let service = PostService()
+        service.getPost(request: nil) { response, error in
+            guard let postsData = response?.data else { return }
+            self.posts = []
+            for data in postsData {
+                self.posts.append(data.toModel())
+            }
+            DispatchQueue.main.async {
+                self.configCells()
+                self.loadTable()
+            }
+        }
     }
     func configTable() {
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.tableView.register(UINib(nibName: SearchBarCell.identifier, bundle: nil), forCellReuseIdentifier: SearchBarCell.identifier)
+        self.tableView.register(UINib(nibName: PostCell.identifier, bundle: nil), forCellReuseIdentifier: PostCell.identifier)
         self.tableView.isScrollEnabled = true
         self.tableView.tableFooterView = UIView()
     }
     func configCells() {
         cells = []
-        cells.append(.searchBarCell(SearchBarCellData(placeHolder: "Buscar posts")))        
+        cells.append(.searchBarCell(SearchBarCellData(placeHolder: "Buscar posts")))
+        for post in posts {
+            cells.append(.postCell(
+                PostCellData(post: post)
+            ))
+        }
     }
     func loadTable() {
         self.tableView.reloadData()
@@ -58,6 +80,11 @@ extension PostViewController: UITableViewDataSource {
             cell.configure(data: data)
             cell.delegate = self
             return cell
+        case .postCell(let data):
+            let cell = tableView.dequeueReusableCell(withIdentifier: PostCell.identifier, for: indexPath) as! PostCell
+            cell.configure(data: data)
+            cell.delegate = self
+            return cell
         default:
             let cell = UITableViewCell()
             cell.selectionStyle = .none
@@ -73,6 +100,8 @@ extension PostViewController: UITableViewDelegate {
         switch cell {
         case .searchBarCell(_):
             return SearchBarCell.height
+        case .postCell(_):
+            return PostCell.height
         default :
             return 0
         }
@@ -84,5 +113,10 @@ extension PostViewController: SearchBarCellDelegate {
     }
     func changeText(cell: SearchBarCell, searchText: String) {
         print(searchText)
+    }
+}
+extension PostViewController: PostCellDelegate {
+    func selected(cell: PostCell) {
+        
     }
 }
