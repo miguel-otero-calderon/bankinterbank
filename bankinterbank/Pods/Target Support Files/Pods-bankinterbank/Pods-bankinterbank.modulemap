@@ -1,0 +1,6 @@
+framework module Pods_bankinterbank {
+  umbrella header "Pods-bankinterbank-umbrella.h"
+
+  export *
+  module * { export * }
+}
