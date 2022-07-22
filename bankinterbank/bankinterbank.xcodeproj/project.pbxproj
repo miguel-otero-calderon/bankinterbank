@@ -7,9 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C1E0F60288A26AE003A4FF2 /* PostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F59288A26AE003A4FF2 /* PostPresenter.swift */; };
+		4C1E0F61288A26AE003A4FF2 /* PostLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F5A288A26AE003A4FF2 /* PostLocalDataManager.swift */; };
+		4C1E0F62288A26AE003A4FF2 /* PostProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F5B288A26AE003A4FF2 /* PostProtocols.swift */; };
+		4C1E0F63288A26AE003A4FF2 /* PostInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F5C288A26AE003A4FF2 /* PostInteractor.swift */; };
+		4C1E0F65288A26AE003A4FF2 /* PostRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F5E288A26AE003A4FF2 /* PostRemoteDataManager.swift */; };
+		4C1E0F66288A26AE003A4FF2 /* PostWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F5F288A26AE003A4FF2 /* PostWireFrame.swift */; };
+		4C1E0F6B288A2740003A4FF2 /* PostUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F6A288A2740003A4FF2 /* PostUseCase.swift */; };
+		4C1E0F6F288A27D6003A4FF2 /* InitViewControllerUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F6E288A27D6003A4FF2 /* InitViewControllerUseCase.swift */; };
+		4C1E0F74288A2843003A4FF2 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F72288A2843003A4FF2 /* PostViewController.swift */; };
+		4C1E0F79288A2989003A4FF2 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F78288A2989003A4FF2 /* EndPoint.swift */; };
+		4C1E0F7B288A2A5B003A4FF2 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F7A288A2A5B003A4FF2 /* PostService.swift */; };
+		4C1E0F7D288A2D70003A4FF2 /* PostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F7C288A2D6F003A4FF2 /* PostResponse.swift */; };
+		4C1E0F81288A2E13003A4FF2 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F80288A2E13003A4FF2 /* Post.swift */; };
+		4C1E0F83288A2EE4003A4FF2 /* PostEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F82288A2EE4003A4FF2 /* PostEndpoint.swift */; };
+		4C1E0F85288A328A003A4FF2 /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1E0F84288A328A003A4FF2 /* Post.storyboard */; };
+		4C1E0F89288A372B003A4FF2 /* SearchBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F87288A372B003A4FF2 /* SearchBarCell.swift */; };
+		4C1E0F8A288A372B003A4FF2 /* SearchBarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1E0F88288A372B003A4FF2 /* SearchBarCell.xib */; };
+		4C1E0F8D288A377D003A4FF2 /* ProtocolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F8C288A377D003A4FF2 /* ProtocolCell.swift */; };
+		4C1E0F8F288A379A003A4FF2 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F8E288A379A003A4FF2 /* CustomCell.swift */; };
+		4C1E0F93288A3831003A4FF2 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F91288A3831003A4FF2 /* PostCell.swift */; };
+		4C1E0F94288A3831003A4FF2 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1E0F92288A3831003A4FF2 /* PostCell.xib */; };
+		4C1E0F96288A45E1003A4FF2 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F95288A45E1003A4FF2 /* PostRequest.swift */; };
 		4CC3ADCD288A24F100BE536E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC3ADCC288A24F100BE536E /* AppDelegate.swift */; };
 		4CC3ADCF288A24F100BE536E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC3ADCE288A24F100BE536E /* SceneDelegate.swift */; };
-		4CC3ADD1288A24F100BE536E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC3ADD0288A24F100BE536E /* ViewController.swift */; };
 		4CC3ADD4288A24F100BE536E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC3ADD2288A24F100BE536E /* Main.storyboard */; };
 		4CC3ADD6288A24FB00BE536E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CC3ADD5288A24FB00BE536E /* Assets.xcassets */; };
 		4CC3ADD9288A24FB00BE536E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC3ADD7288A24FB00BE536E /* LaunchScreen.storyboard */; };
@@ -19,10 +40,31 @@
 /* Begin PBXFileReference section */
 		1296661A5D41C3A8EB1A0545 /* Pods-bankinterbank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bankinterbank.debug.xcconfig"; path = "Target Support Files/Pods-bankinterbank/Pods-bankinterbank.debug.xcconfig"; sourceTree = "<group>"; };
 		39B828E41F67CC363B9E9FEF /* Pods-bankinterbank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bankinterbank.release.xcconfig"; path = "Target Support Files/Pods-bankinterbank/Pods-bankinterbank.release.xcconfig"; sourceTree = "<group>"; };
+		4C1E0F59288A26AE003A4FF2 /* PostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPresenter.swift; sourceTree = "<group>"; };
+		4C1E0F5A288A26AE003A4FF2 /* PostLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocalDataManager.swift; sourceTree = "<group>"; };
+		4C1E0F5B288A26AE003A4FF2 /* PostProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProtocols.swift; sourceTree = "<group>"; };
+		4C1E0F5C288A26AE003A4FF2 /* PostInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostInteractor.swift; sourceTree = "<group>"; };
+		4C1E0F5E288A26AE003A4FF2 /* PostRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRemoteDataManager.swift; sourceTree = "<group>"; };
+		4C1E0F5F288A26AE003A4FF2 /* PostWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostWireFrame.swift; sourceTree = "<group>"; };
+		4C1E0F6A288A2740003A4FF2 /* PostUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUseCase.swift; sourceTree = "<group>"; };
+		4C1E0F6E288A27D6003A4FF2 /* InitViewControllerUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitViewControllerUseCase.swift; sourceTree = "<group>"; };
+		4C1E0F72288A2843003A4FF2 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		4C1E0F78288A2989003A4FF2 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		4C1E0F7A288A2A5B003A4FF2 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		4C1E0F7C288A2D6F003A4FF2 /* PostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResponse.swift; sourceTree = "<group>"; };
+		4C1E0F80288A2E13003A4FF2 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		4C1E0F82288A2EE4003A4FF2 /* PostEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEndpoint.swift; sourceTree = "<group>"; };
+		4C1E0F84288A328A003A4FF2 /* Post.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
+		4C1E0F87288A372B003A4FF2 /* SearchBarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarCell.swift; sourceTree = "<group>"; };
+		4C1E0F88288A372B003A4FF2 /* SearchBarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBarCell.xib; sourceTree = "<group>"; };
+		4C1E0F8C288A377D003A4FF2 /* ProtocolCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolCell.swift; sourceTree = "<group>"; };
+		4C1E0F8E288A379A003A4FF2 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		4C1E0F91288A3831003A4FF2 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		4C1E0F92288A3831003A4FF2 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
+		4C1E0F95288A45E1003A4FF2 /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
 		4CC3ADC9288A24F100BE536E /* bankinterbank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bankinterbank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC3ADCC288A24F100BE536E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CC3ADCE288A24F100BE536E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4CC3ADD0288A24F100BE536E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4CC3ADD3288A24F100BE536E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CC3ADD5288A24FB00BE536E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CC3ADD8288A24FB00BE536E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +84,120 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C1E0F67288A26C3003A4FF2 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				4C1E0F84288A328A003A4FF2 /* Post.storyboard */,
+				4C1E0F72288A2843003A4FF2 /* PostViewController.swift */,
+				4C1E0F59288A26AE003A4FF2 /* PostPresenter.swift */,
+				4C1E0F5A288A26AE003A4FF2 /* PostLocalDataManager.swift */,
+				4C1E0F5B288A26AE003A4FF2 /* PostProtocols.swift */,
+				4C1E0F5C288A26AE003A4FF2 /* PostInteractor.swift */,
+				4C1E0F5E288A26AE003A4FF2 /* PostRemoteDataManager.swift */,
+				4C1E0F5F288A26AE003A4FF2 /* PostWireFrame.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		4C1E0F68288A271B003A4FF2 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				4C1E0F6C288A2760003A4FF2 /* InitViewController */,
+				4C1E0F6D288A2790003A4FF2 /* Post */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		4C1E0F69288A2728003A4FF2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4C1E0F86288A36E6003A4FF2 /* Cells */,
+				4C1E0F67288A26C3003A4FF2 /* Post */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4C1E0F6C288A2760003A4FF2 /* InitViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4C1E0F6E288A27D6003A4FF2 /* InitViewControllerUseCase.swift */,
+			);
+			path = InitViewController;
+			sourceTree = "<group>";
+		};
+		4C1E0F6D288A2790003A4FF2 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				4C1E0F6A288A2740003A4FF2 /* PostUseCase.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		4C1E0F76288A295C003A4FF2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4C1E0F77288A2966003A4FF2 /* Post */,
+				4C1E0F78288A2989003A4FF2 /* EndPoint.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4C1E0F77288A2966003A4FF2 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				4C1E0F7A288A2A5B003A4FF2 /* PostService.swift */,
+				4C1E0F7C288A2D6F003A4FF2 /* PostResponse.swift */,
+				4C1E0F82288A2EE4003A4FF2 /* PostEndpoint.swift */,
+				4C1E0F95288A45E1003A4FF2 /* PostRequest.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		4C1E0F7E288A2DF2003A4FF2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C1E0F7F288A2E07003A4FF2 /* Post */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C1E0F7F288A2E07003A4FF2 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				4C1E0F80288A2E13003A4FF2 /* Post.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		4C1E0F86288A36E6003A4FF2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4C1E0F8E288A379A003A4FF2 /* CustomCell.swift */,
+				4C1E0F8C288A377D003A4FF2 /* ProtocolCell.swift */,
+				4C1E0F90288A381A003A4FF2 /* PostCell */,
+				4C1E0F8B288A3731003A4FF2 /* SearchBarCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4C1E0F8B288A3731003A4FF2 /* SearchBarCell */ = {
+			isa = PBXGroup;
+			children = (
+				4C1E0F87288A372B003A4FF2 /* SearchBarCell.swift */,
+				4C1E0F88288A372B003A4FF2 /* SearchBarCell.xib */,
+			);
+			path = SearchBarCell;
+			sourceTree = "<group>";
+		};
+		4C1E0F90288A381A003A4FF2 /* PostCell */ = {
+			isa = PBXGroup;
+			children = (
+				4C1E0F91288A3831003A4FF2 /* PostCell.swift */,
+				4C1E0F92288A3831003A4FF2 /* PostCell.xib */,
+			);
+			path = PostCell;
+			sourceTree = "<group>";
+		};
 		4CC3ADC0288A24F100BE536E = {
 			isa = PBXGroup;
 			children = (
@@ -65,7 +221,10 @@
 			children = (
 				4CC3ADCC288A24F100BE536E /* AppDelegate.swift */,
 				4CC3ADCE288A24F100BE536E /* SceneDelegate.swift */,
-				4CC3ADD0288A24F100BE536E /* ViewController.swift */,
+				4C1E0F69288A2728003A4FF2 /* Modules */,
+				4C1E0F68288A271B003A4FF2 /* UseCase */,
+				4C1E0F76288A295C003A4FF2 /* Networking */,
+				4C1E0F7E288A2DF2003A4FF2 /* Model */,
 				4CC3ADD2288A24F100BE536E /* Main.storyboard */,
 				4CC3ADD5288A24FB00BE536E /* Assets.xcassets */,
 				4CC3ADD7288A24FB00BE536E /* LaunchScreen.storyboard */,
@@ -88,7 +247,6 @@
 				1296661A5D41C3A8EB1A0545 /* Pods-bankinterbank.debug.xcconfig */,
 				39B828E41F67CC363B9E9FEF /* Pods-bankinterbank.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,8 +311,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CC3ADD9288A24FB00BE536E /* LaunchScreen.storyboard in Resources */,
+				4C1E0F94288A3831003A4FF2 /* PostCell.xib in Resources */,
 				4CC3ADD6288A24FB00BE536E /* Assets.xcassets in Resources */,
 				4CC3ADD4288A24F100BE536E /* Main.storyboard in Resources */,
+				4C1E0F8A288A372B003A4FF2 /* SearchBarCell.xib in Resources */,
+				4C1E0F85288A328A003A4FF2 /* Post.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,9 +368,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CC3ADD1288A24F100BE536E /* ViewController.swift in Sources */,
+				4C1E0F74288A2843003A4FF2 /* PostViewController.swift in Sources */,
+				4C1E0F96288A45E1003A4FF2 /* PostRequest.swift in Sources */,
+				4C1E0F63288A26AE003A4FF2 /* PostInteractor.swift in Sources */,
 				4CC3ADCD288A24F100BE536E /* AppDelegate.swift in Sources */,
+				4C1E0F66288A26AE003A4FF2 /* PostWireFrame.swift in Sources */,
+				4C1E0F83288A2EE4003A4FF2 /* PostEndpoint.swift in Sources */,
 				4CC3ADCF288A24F100BE536E /* SceneDelegate.swift in Sources */,
+				4C1E0F89288A372B003A4FF2 /* SearchBarCell.swift in Sources */,
+				4C1E0F6B288A2740003A4FF2 /* PostUseCase.swift in Sources */,
+				4C1E0F8F288A379A003A4FF2 /* CustomCell.swift in Sources */,
+				4C1E0F79288A2989003A4FF2 /* EndPoint.swift in Sources */,
+				4C1E0F60288A26AE003A4FF2 /* PostPresenter.swift in Sources */,
+				4C1E0F7D288A2D70003A4FF2 /* PostResponse.swift in Sources */,
+				4C1E0F81288A2E13003A4FF2 /* Post.swift in Sources */,
+				4C1E0F6F288A27D6003A4FF2 /* InitViewControllerUseCase.swift in Sources */,
+				4C1E0F65288A26AE003A4FF2 /* PostRemoteDataManager.swift in Sources */,
+				4C1E0F7B288A2A5B003A4FF2 /* PostService.swift in Sources */,
+				4C1E0F62288A26AE003A4FF2 /* PostProtocols.swift in Sources */,
+				4C1E0F61288A26AE003A4FF2 /* PostLocalDataManager.swift in Sources */,
+				4C1E0F8D288A377D003A4FF2 /* ProtocolCell.swift in Sources */,
+				4C1E0F93288A3831003A4FF2 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
