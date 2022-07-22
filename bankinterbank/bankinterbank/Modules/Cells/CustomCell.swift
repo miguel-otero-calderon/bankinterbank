@@ -11,6 +11,5 @@ enum CustomCell {
     case searchBarCell (SearchBarCellData)
     case postCell (PostCellData)
     case userCell (UserCellData)
-//    case dayCheckCell (DayCheckCellData)
-//    case cancelDoneCell (CancelDoneCellData)
+    case cancelCell (CancelCellData)
 }

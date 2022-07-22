@@ -210,4 +210,27 @@ extension UIView {
         shapeLayer.path = UIBezierPath(roundedRect: shapeRect, cornerRadius: cornerRadius).cgPath
         self.layer.addSublayer(shapeLayer)
     }
+    var top: CGFloat {
+        frame.origin.y
+    }
+
+    var bottom: CGFloat {
+        frame.origin.y+height
+    }
+
+    var left: CGFloat {
+        frame.origin.x
+    }
+
+    var right: CGFloat {
+        frame.origin.x+width
+    }
+
+    var width: CGFloat {
+        frame.size.width
+    }
+
+    var height: CGFloat {
+        frame.size.height
+    }
 }

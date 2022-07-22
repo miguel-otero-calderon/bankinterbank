@@ -68,7 +68,7 @@
                                     <constraint firstAttribute="height" constant="16" id="3gr-Tu-jz2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="12"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post:id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9o2-WE-gTq">
@@ -78,11 +78,11 @@
                                     <constraint firstAttribute="height" constant="16" id="Y2a-Ta-8ll"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="12"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4pn-vp-gbY" userLabel="Line View">
-                                <rect key="frame" x="16" y="62" width="343" height="1"/>
+                                <rect key="frame" x="0.0" y="62" width="375" height="1"/>
                                 <color key="backgroundColor" red="0.51764705882352935" green="0.54509803921568623" blue="0.57647058823529407" alpha="0.49780111754966888" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="gtB-HG-BP0"/>
@@ -92,9 +92,9 @@
                         <constraints>
                             <constraint firstItem="RrI-3g-gAz" firstAttribute="centerY" secondItem="19x-7c-hOM" secondAttribute="centerY" id="7XX-71-bPZ"/>
                             <constraint firstItem="DHQ-vx-VTj" firstAttribute="leading" secondItem="19x-7c-hOM" secondAttribute="leading" constant="16" id="BKt-0v-aBG"/>
-                            <constraint firstItem="4pn-vp-gbY" firstAttribute="leading" secondItem="19x-7c-hOM" secondAttribute="leading" constant="16" id="Clo-8d-9G4"/>
+                            <constraint firstItem="4pn-vp-gbY" firstAttribute="leading" secondItem="19x-7c-hOM" secondAttribute="leading" id="Clo-8d-9G4"/>
                             <constraint firstItem="4pn-vp-gbY" firstAttribute="top" secondItem="DHQ-vx-VTj" secondAttribute="bottom" constant="19" id="Eog-ud-XPg"/>
-                            <constraint firstAttribute="trailing" secondItem="4pn-vp-gbY" secondAttribute="trailing" constant="16" id="Fkv-sW-99y"/>
+                            <constraint firstAttribute="trailing" secondItem="4pn-vp-gbY" secondAttribute="trailing" id="Fkv-sW-99y"/>
                             <constraint firstAttribute="trailing" secondItem="9o2-WE-gTq" secondAttribute="trailing" constant="16" id="TV0-C3-bhE"/>
                             <constraint firstItem="RrI-3g-gAz" firstAttribute="leading" secondItem="DHQ-vx-VTj" secondAttribute="trailing" constant="10" id="Usl-wh-mOY"/>
                             <constraint firstItem="9o2-WE-gTq" firstAttribute="centerY" secondItem="19x-7c-hOM" secondAttribute="centerY" id="kWK-jh-trG"/>

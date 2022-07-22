@@ -10,6 +10,13 @@ import UIKit
 
 struct InitViewControllerUseCase {
     static func getInitViewController() -> UIViewController {
-        return PostWireFrame.createPostModule() as! UIViewController
+        let loginViewController = LoginWireFrame.createLoginModule()
+        let postViewController = PostWireFrame.createPostModule() 
+        let existsLogin = loginViewController.presenter?.existsLogin() ?? false
+        if existsLogin {
+           return postViewController
+        } else {
+            return loginViewController
+        }
     }
 }

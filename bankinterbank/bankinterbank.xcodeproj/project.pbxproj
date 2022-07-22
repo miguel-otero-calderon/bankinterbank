@@ -40,9 +40,21 @@
 		4C1E0FB1288AA7C9003A4FF2 /* Double+Extenions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0FB0288AA7C9003A4FF2 /* Double+Extenions.swift */; };
 		4C1E0FB5288AEFE6003A4FF2 /* CancelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0FB3288AEFE6003A4FF2 /* CancelCell.swift */; };
 		4C1E0FB6288AEFE6003A4FF2 /* CancelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1E0FB4288AEFE6003A4FF2 /* CancelCell.xib */; };
+		4C1E0FB9288AF3C2003A4FF2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0FB8288AF3C2003A4FF2 /* LoginViewController.swift */; };
+		4C1E0FBB288AF3DB003A4FF2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1E0FBA288AF3DB003A4FF2 /* Login.storyboard */; };
+		4C1E0FBD288AF3FA003A4FF2 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0FBC288AF3FA003A4FF2 /* LoginPresenter.swift */; };
+		4C1E0FBF288AF40A003A4FF2 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0FBE288AF40A003A4FF2 /* LoginInteractor.swift */; };
+		4C1E0FC1288AF41A003A4FF2 /* LoginWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0FC0288AF41A003A4FF2 /* LoginWireFrame.swift */; };
+		4C1E0FC3288AF4B6003A4FF2 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0FC2288AF4B6003A4FF2 /* LoginProtocols.swift */; };
+		4C1E0FC5288AF620003A4FF2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0FC4288AF620003A4FF2 /* Login.swift */; };
+		4C1E0FC8288AF772003A4FF2 /* LoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0FC7288AF772003A4FF2 /* LoginHeaderView.swift */; };
+		4C1E0FCA288AF7CD003A4FF2 /* IGTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0FC9288AF7CD003A4FF2 /* IGTextField.swift */; };
+		4C1E0FCD288AF808003A4FF2 /* LoginValidationsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0FCC288AF808003A4FF2 /* LoginValidationsUseCase.swift */; };
+		4C1E0FCF288AF8BE003A4FF2 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0FCE288AF8BD003A4FF2 /* HapticsManager.swift */; };
+		4C1E0FD2288B11F3003A4FF2 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0FD1288B11F3003A4FF2 /* LoginService.swift */; };
+		4C1E0FD4288B12A3003A4FF2 /* LoginLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0FD3288B12A3003A4FF2 /* LoginLocal.swift */; };
 		4CC3ADCD288A24F100BE536E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC3ADCC288A24F100BE536E /* AppDelegate.swift */; };
 		4CC3ADCF288A24F100BE536E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC3ADCE288A24F100BE536E /* SceneDelegate.swift */; };
-		4CC3ADD4288A24F100BE536E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC3ADD2288A24F100BE536E /* Main.storyboard */; };
 		4CC3ADD6288A24FB00BE536E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CC3ADD5288A24FB00BE536E /* Assets.xcassets */; };
 		4CC3ADD9288A24FB00BE536E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC3ADD7288A24FB00BE536E /* LaunchScreen.storyboard */; };
 		9398A05C6D9902F74FD164D3 /* Pods_bankinterbank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63087FE2DC0E3BDF16BC2F4C /* Pods_bankinterbank.framework */; };
@@ -84,10 +96,22 @@
 		4C1E0FB0288AA7C9003A4FF2 /* Double+Extenions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extenions.swift"; sourceTree = "<group>"; };
 		4C1E0FB3288AEFE6003A4FF2 /* CancelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelCell.swift; sourceTree = "<group>"; };
 		4C1E0FB4288AEFE6003A4FF2 /* CancelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CancelCell.xib; sourceTree = "<group>"; };
+		4C1E0FB8288AF3C2003A4FF2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4C1E0FBA288AF3DB003A4FF2 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		4C1E0FBC288AF3FA003A4FF2 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		4C1E0FBE288AF40A003A4FF2 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		4C1E0FC0288AF41A003A4FF2 /* LoginWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireFrame.swift; sourceTree = "<group>"; };
+		4C1E0FC2288AF4B6003A4FF2 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		4C1E0FC4288AF620003A4FF2 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		4C1E0FC7288AF772003A4FF2 /* LoginHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHeaderView.swift; sourceTree = "<group>"; };
+		4C1E0FC9288AF7CD003A4FF2 /* IGTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTextField.swift; sourceTree = "<group>"; };
+		4C1E0FCC288AF808003A4FF2 /* LoginValidationsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidationsUseCase.swift; sourceTree = "<group>"; };
+		4C1E0FCE288AF8BD003A4FF2 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		4C1E0FD1288B11F3003A4FF2 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		4C1E0FD3288B12A3003A4FF2 /* LoginLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLocal.swift; sourceTree = "<group>"; };
 		4CC3ADC9288A24F100BE536E /* bankinterbank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bankinterbank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC3ADCC288A24F100BE536E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CC3ADCE288A24F100BE536E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4CC3ADD3288A24F100BE536E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CC3ADD5288A24FB00BE536E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CC3ADD8288A24FB00BE536E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CC3ADDA288A24FB00BE536E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,6 +145,7 @@
 		4C1E0F68288A271B003A4FF2 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				4C1E0FCB288AF7FC003A4FF2 /* LoginValidations */,
 				4C1E0F6C288A2760003A4FF2 /* InitViewController */,
 				4C1E0F6D288A2790003A4FF2 /* Post */,
 			);
@@ -131,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				4C1E0F86288A36E6003A4FF2 /* Cells */,
+				4C1E0FB7288AF387003A4FF2 /* Login */,
 				4C1E0F67288A26C3003A4FF2 /* Post */,
 				4C1E0F9D288A94E2003A4FF2 /* PostDetail */,
 			);
@@ -156,6 +182,7 @@
 		4C1E0F76288A295C003A4FF2 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				4C1E0FD0288B11DF003A4FF2 /* Login */,
 				4C1E0F77288A2966003A4FF2 /* Post */,
 				4C1E0F78288A2989003A4FF2 /* EndPoint.swift */,
 			);
@@ -180,6 +207,7 @@
 				4C1E0F97288A6B03003A4FF2 /* Meta.swift */,
 				4C1E0F99288A6C30003A4FF2 /* Pagination.swift */,
 				4C1E0F9B288A6C55003A4FF2 /* Links.swift */,
+				4C1E0FC4288AF620003A4FF2 /* Login.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -241,6 +269,7 @@
 			children = (
 				4C1E0FAE288AA746003A4FF2 /* UIView+Extensions.swift */,
 				4C1E0FB0288AA7C9003A4FF2 /* Double+Extenions.swift */,
+				4C1E0FCE288AF8BD003A4FF2 /* HapticsManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -252,6 +281,45 @@
 				4C1E0FB4288AEFE6003A4FF2 /* CancelCell.xib */,
 			);
 			path = CancelCell;
+			sourceTree = "<group>";
+		};
+		4C1E0FB7288AF387003A4FF2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4C1E0FBA288AF3DB003A4FF2 /* Login.storyboard */,
+				4C1E0FB8288AF3C2003A4FF2 /* LoginViewController.swift */,
+				4C1E0FBC288AF3FA003A4FF2 /* LoginPresenter.swift */,
+				4C1E0FBE288AF40A003A4FF2 /* LoginInteractor.swift */,
+				4C1E0FC0288AF41A003A4FF2 /* LoginWireFrame.swift */,
+				4C1E0FC2288AF4B6003A4FF2 /* LoginProtocols.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4C1E0FC6288AF74F003A4FF2 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				4C1E0FC7288AF772003A4FF2 /* LoginHeaderView.swift */,
+				4C1E0FC9288AF7CD003A4FF2 /* IGTextField.swift */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		4C1E0FCB288AF7FC003A4FF2 /* LoginValidations */ = {
+			isa = PBXGroup;
+			children = (
+				4C1E0FCC288AF808003A4FF2 /* LoginValidationsUseCase.swift */,
+			);
+			path = LoginValidations;
+			sourceTree = "<group>";
+		};
+		4C1E0FD0288B11DF003A4FF2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4C1E0FD1288B11F3003A4FF2 /* LoginService.swift */,
+				4C1E0FD3288B12A3003A4FF2 /* LoginLocal.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		4CC3ADC0288A24F100BE536E = {
@@ -282,7 +350,7 @@
 				4C1E0F76288A295C003A4FF2 /* Networking */,
 				4C1E0F7E288A2DF2003A4FF2 /* Model */,
 				4C1E0FAD288AA712003A4FF2 /* Utils */,
-				4CC3ADD2288A24F100BE536E /* Main.storyboard */,
+				4C1E0FC6288AF74F003A4FF2 /* ViewComponents */,
 				4CC3ADD5288A24FB00BE536E /* Assets.xcassets */,
 				4CC3ADD7288A24FB00BE536E /* LaunchScreen.storyboard */,
 				4CC3ADDA288A24FB00BE536E /* Info.plist */,
@@ -372,9 +440,9 @@
 				4CC3ADD6288A24FB00BE536E /* Assets.xcassets in Resources */,
 				4C1E0F9F288A951A003A4FF2 /* PostDetail.storyboard in Resources */,
 				4C1E0FAC288AA56F003A4FF2 /* UserCell.xib in Resources */,
-				4CC3ADD4288A24F100BE536E /* Main.storyboard in Resources */,
 				4C1E0FB6288AEFE6003A4FF2 /* CancelCell.xib in Resources */,
 				4C1E0F8A288A372B003A4FF2 /* SearchBarCell.xib in Resources */,
+				4C1E0FBB288AF3DB003A4FF2 /* Login.storyboard in Resources */,
 				4C1E0F85288A328A003A4FF2 /* Post.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,26 +497,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C1E0F74288A2843003A4FF2 /* PostViewController.swift in Sources */,
+				4C1E0FC8288AF772003A4FF2 /* LoginHeaderView.swift in Sources */,
 				4C1E0FAF288AA746003A4FF2 /* UIView+Extensions.swift in Sources */,
 				4C1E0F96288A45E1003A4FF2 /* PostRequest.swift in Sources */,
 				4C1E0F63288A26AE003A4FF2 /* PostInteractor.swift in Sources */,
+				4C1E0FBF288AF40A003A4FF2 /* LoginInteractor.swift in Sources */,
 				4C1E0FA1288A952C003A4FF2 /* PostDetailViewController.swift in Sources */,
+				4C1E0FD2288B11F3003A4FF2 /* LoginService.swift in Sources */,
 				4CC3ADCD288A24F100BE536E /* AppDelegate.swift in Sources */,
 				4C1E0F9C288A6C55003A4FF2 /* Links.swift in Sources */,
+				4C1E0FCF288AF8BE003A4FF2 /* HapticsManager.swift in Sources */,
 				4C1E0FA3288A9538003A4FF2 /* PostDetailPresenter.swift in Sources */,
 				4C1E0FB1288AA7C9003A4FF2 /* Double+Extenions.swift in Sources */,
+				4C1E0FD4288B12A3003A4FF2 /* LoginLocal.swift in Sources */,
 				4C1E0F66288A26AE003A4FF2 /* PostWireFrame.swift in Sources */,
+				4C1E0FCD288AF808003A4FF2 /* LoginValidationsUseCase.swift in Sources */,
 				4C1E0F83288A2EE4003A4FF2 /* PostEndpoint.swift in Sources */,
 				4CC3ADCF288A24F100BE536E /* SceneDelegate.swift in Sources */,
 				4C1E0F89288A372B003A4FF2 /* SearchBarCell.swift in Sources */,
 				4C1E0F6B288A2740003A4FF2 /* PostUseCase.swift in Sources */,
 				4C1E0F8F288A379A003A4FF2 /* CustomCell.swift in Sources */,
+				4C1E0FC1288AF41A003A4FF2 /* LoginWireFrame.swift in Sources */,
 				4C1E0F79288A2989003A4FF2 /* EndPoint.swift in Sources */,
 				4C1E0FAB288AA56F003A4FF2 /* UserCell.swift in Sources */,
 				4C1E0F60288A26AE003A4FF2 /* PostPresenter.swift in Sources */,
+				4C1E0FBD288AF3FA003A4FF2 /* LoginPresenter.swift in Sources */,
+				4C1E0FC5288AF620003A4FF2 /* Login.swift in Sources */,
+				4C1E0FB9288AF3C2003A4FF2 /* LoginViewController.swift in Sources */,
 				4C1E0F7D288A2D70003A4FF2 /* PostResponse.swift in Sources */,
 				4C1E0F98288A6B03003A4FF2 /* Meta.swift in Sources */,
 				4C1E0FA5288A9549003A4FF2 /* PostDetailInteractor.swift in Sources */,
+				4C1E0FC3288AF4B6003A4FF2 /* LoginProtocols.swift in Sources */,
+				4C1E0FCA288AF7CD003A4FF2 /* IGTextField.swift in Sources */,
 				4C1E0F81288A2E13003A4FF2 /* Post.swift in Sources */,
 				4C1E0FA7288A9557003A4FF2 /* PostDetailWireFrame.swift in Sources */,
 				4C1E0F6F288A27D6003A4FF2 /* InitViewControllerUseCase.swift in Sources */,
@@ -463,14 +543,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4CC3ADD2288A24F100BE536E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4CC3ADD3288A24F100BE536E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4CC3ADD7288A24FB00BE536E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -609,7 +681,6 @@
 				INFOPLIST_FILE = bankinterbank/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -638,7 +709,6 @@
 				INFOPLIST_FILE = bankinterbank/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

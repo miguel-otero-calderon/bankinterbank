@@ -35,6 +35,7 @@ class PostDetailViewController: UIViewController {
         self.tableView.delegate = self
         self.tableView.register(UINib(nibName: UserCell.identifier, bundle: nil), forCellReuseIdentifier: UserCell.identifier)
         self.tableView.register(UINib(nibName: PostCell.identifier, bundle: nil), forCellReuseIdentifier: PostCell.identifier)
+        self.tableView.register(UINib(nibName: CancelCell.identifier, bundle: nil), forCellReuseIdentifier: CancelCell.identifier)
         self.tableView.isScrollEnabled = true
         self.tableView.tableFooterView = UIView()
     }
@@ -48,6 +49,9 @@ class PostDetailViewController: UIViewController {
         ))
         cells.append(.postCell(
             PostCellData(post: post)
+        ))
+        cells.append(.cancelCell(
+            CancelCellData(cancelTitle: "Cancel")
         ))
     }
     func loadTable() {
@@ -86,6 +90,11 @@ extension PostDetailViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: PostCell.identifier, for: indexPath) as! PostCell
             cell.configure(data: data)
             return cell
+        case .cancelCell(let data):
+            let cell = tableView.dequeueReusableCell(withIdentifier: CancelCell.identifier, for: indexPath) as! CancelCell
+            cell.configure(data: data)
+            cell.delegate = self
+            return cell
         default:
             let cell = UITableViewCell()
             cell.selectionStyle = .none
@@ -103,9 +112,15 @@ extension PostDetailViewController: UITableViewDelegate {
             return UserCell.height
         case .postCell(_):
             return PostCell.height
+        case .cancelCell(_):
+            return CancelCell.height
         default :
             return 0
         }
     }
 }
-
+extension PostDetailViewController: CancelCellDelegate {
+    func cancel(cell: CancelCell) {
+        self.dismiss(animated: true)
+    }
+}

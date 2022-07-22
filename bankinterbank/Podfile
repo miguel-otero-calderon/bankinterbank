@@ -4,7 +4,7 @@ target 'bankinterbank' do
   use_frameworks!
 
   pod 'Alamofire'
-  # pod 'Kingfisher'
+  pod 'Kingfisher'
   # pod 'ProgressHUD'
   # pod 'KeychainAccess'
 end
