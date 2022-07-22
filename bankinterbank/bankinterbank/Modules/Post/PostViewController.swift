@@ -16,6 +16,7 @@ class PostViewController: UIViewController {
     //Outlets
     @IBOutlet weak var headerTableView: UITableView!
     @IBOutlet weak var postTableView: UITableView!
+    @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     //variables
     var cellsHeader:[CustomCell] = []
     var cells:[CustomCell] = []
@@ -32,6 +33,7 @@ class PostViewController: UIViewController {
         super.viewDidLoad()
         configTable()
         configCells()
+        self.indicatorView.startAnimating()
         let request = PostRequest(title: "",page: 1)
         presenter?.getPost(request: request)
     }
@@ -66,6 +68,8 @@ class PostViewController: UIViewController {
 
 extension PostViewController: PostViewControllerProtocol {
     func getPost(meta: Meta?, posts: [Post]?, error: Error?) {
+        self.indicatorView.stopAnimating()
+        self.indicatorView.isHidden = true
         if let error = error {
             print(error)
             return

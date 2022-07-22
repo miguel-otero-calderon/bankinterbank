@@ -42,6 +42,10 @@
                                     <constraint firstItem="4nY-sO-Lbl" firstAttribute="top" secondItem="yPZ-yG-XjG" secondAttribute="top" id="oep-oI-Lgp"/>
                                 </constraints>
                             </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="Rcz-rU-3RX">
+                                <rect key="frame" x="20" y="426" width="374" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -54,6 +58,7 @@
                     </view>
                     <connections>
                         <outlet property="headerTableView" destination="4nY-sO-Lbl" id="iWv-U1-Jtl"/>
+                        <outlet property="indicatorView" destination="Rcz-rU-3RX" id="ou2-JH-mcX"/>
                         <outlet property="postTableView" destination="BBg-HL-iKI" id="RMI-2p-w8c"/>
                     </connections>
                 </viewController>
