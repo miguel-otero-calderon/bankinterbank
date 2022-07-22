@@ -15,7 +15,7 @@ protocol LoginServiceProtocol {
 class LoginService: LoginServiceProtocol {
     func signIn(email: String, password: String, completion: @escaping (Result<Login, Error>) -> Void) {
         let userHard = "ADMIN"
-        let passwordHard = "admin"
+        let passwordHard = "Password*123"
         
         if email.uppercased() == userHard && password == passwordHard {
             let login = Login(username: "Administrador", email: email, password: password)

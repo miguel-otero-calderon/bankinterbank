@@ -47,7 +47,6 @@ extension LoginPresenter: LoginPresenterProtocol {
     }
     
     func existsLogin() -> Bool {
-//        return interactor?.existsLogin() ?? false
-        return false
+        return interactor?.existsLogin() ?? false
     }
 }
