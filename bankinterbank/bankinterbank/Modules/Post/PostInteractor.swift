@@ -8,15 +8,20 @@
 
 import Foundation
 
-class PostInteractor: PostInteractorInputProtocol {
-
-    // MARK: Properties
-    weak var presenter: PostInteractorOutputProtocol?
-    var localDatamanager: PostLocalDataManagerInputProtocol?
-    var remoteDatamanager: PostRemoteDataManagerInputProtocol?
-
+protocol PostInteractorProtocol: AnyObject {
+    var presenter: PostPresenterProtocol? { get set }
+    func getPost(request: PostRequest?, completion: @escaping (PostResponse?, Error?) -> Void)
 }
 
-extension PostInteractor: PostRemoteDataManagerOutputProtocol {
-    // TODO: Implement use case methods
+class PostInteractor {
+
+    // MARK: Properties
+    weak var presenter: PostPresenterProtocol?
+}
+
+extension PostInteractor: PostInteractorProtocol {
+    func getPost(request: PostRequest?, completion: @escaping (PostResponse?, Error?) -> Void) {
+        let service = PostService()
+        service.getPost(request: request, completion: completion)
+    }
 }

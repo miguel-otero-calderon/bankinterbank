@@ -26,7 +26,9 @@ class PostCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        delegate?.selected(cell: self)
+        if selected {
+            delegate?.selected(cell: self)
+        }
     }
     func configure(data:PostCellData){
         self.data = data

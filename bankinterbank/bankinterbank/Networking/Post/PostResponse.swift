@@ -45,6 +45,13 @@ struct PostResponseData:Codable {
     let title:String?
     let body:String?
     
+    enum CodingKeys: String, CodingKey {
+        case id
+        case userId = "user_id"
+        case title
+        case body
+    }
+    
     func toModel() -> Post {
         return Post(id: id ?? .zero,
                     userId: userId ?? .zero,

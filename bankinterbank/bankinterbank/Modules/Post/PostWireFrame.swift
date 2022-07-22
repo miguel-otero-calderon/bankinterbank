@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol PostWireFrameProtocol: class {
+protocol PostWireFrameProtocol: AnyObject {
     static func createPostModule() -> PostViewControllerProtocol
 }
 

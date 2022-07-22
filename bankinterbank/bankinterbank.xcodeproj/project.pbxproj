@@ -29,6 +29,17 @@
 		4C1E0F98288A6B03003A4FF2 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F97288A6B03003A4FF2 /* Meta.swift */; };
 		4C1E0F9A288A6C30003A4FF2 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F99288A6C30003A4FF2 /* Pagination.swift */; };
 		4C1E0F9C288A6C55003A4FF2 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0F9B288A6C55003A4FF2 /* Links.swift */; };
+		4C1E0F9F288A951A003A4FF2 /* PostDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1E0F9E288A951A003A4FF2 /* PostDetail.storyboard */; };
+		4C1E0FA1288A952C003A4FF2 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0FA0288A952C003A4FF2 /* PostDetailViewController.swift */; };
+		4C1E0FA3288A9538003A4FF2 /* PostDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0FA2288A9538003A4FF2 /* PostDetailPresenter.swift */; };
+		4C1E0FA5288A9549003A4FF2 /* PostDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0FA4288A9549003A4FF2 /* PostDetailInteractor.swift */; };
+		4C1E0FA7288A9557003A4FF2 /* PostDetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0FA6288A9557003A4FF2 /* PostDetailWireFrame.swift */; };
+		4C1E0FAB288AA56F003A4FF2 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0FA9288AA56F003A4FF2 /* UserCell.swift */; };
+		4C1E0FAC288AA56F003A4FF2 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1E0FAA288AA56F003A4FF2 /* UserCell.xib */; };
+		4C1E0FAF288AA746003A4FF2 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0FAE288AA746003A4FF2 /* UIView+Extensions.swift */; };
+		4C1E0FB1288AA7C9003A4FF2 /* Double+Extenions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0FB0288AA7C9003A4FF2 /* Double+Extenions.swift */; };
+		4C1E0FB5288AEFE6003A4FF2 /* CancelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E0FB3288AEFE6003A4FF2 /* CancelCell.swift */; };
+		4C1E0FB6288AEFE6003A4FF2 /* CancelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1E0FB4288AEFE6003A4FF2 /* CancelCell.xib */; };
 		4CC3ADCD288A24F100BE536E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC3ADCC288A24F100BE536E /* AppDelegate.swift */; };
 		4CC3ADCF288A24F100BE536E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC3ADCE288A24F100BE536E /* SceneDelegate.swift */; };
 		4CC3ADD4288A24F100BE536E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC3ADD2288A24F100BE536E /* Main.storyboard */; };
@@ -62,6 +73,17 @@
 		4C1E0F97288A6B03003A4FF2 /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
 		4C1E0F99288A6C30003A4FF2 /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		4C1E0F9B288A6C55003A4FF2 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		4C1E0F9E288A951A003A4FF2 /* PostDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostDetail.storyboard; sourceTree = "<group>"; };
+		4C1E0FA0288A952C003A4FF2 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		4C1E0FA2288A9538003A4FF2 /* PostDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailPresenter.swift; sourceTree = "<group>"; };
+		4C1E0FA4288A9549003A4FF2 /* PostDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailInteractor.swift; sourceTree = "<group>"; };
+		4C1E0FA6288A9557003A4FF2 /* PostDetailWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailWireFrame.swift; sourceTree = "<group>"; };
+		4C1E0FA9288AA56F003A4FF2 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		4C1E0FAA288AA56F003A4FF2 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		4C1E0FAE288AA746003A4FF2 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		4C1E0FB0288AA7C9003A4FF2 /* Double+Extenions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extenions.swift"; sourceTree = "<group>"; };
+		4C1E0FB3288AEFE6003A4FF2 /* CancelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelCell.swift; sourceTree = "<group>"; };
+		4C1E0FB4288AEFE6003A4FF2 /* CancelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CancelCell.xib; sourceTree = "<group>"; };
 		4CC3ADC9288A24F100BE536E /* bankinterbank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bankinterbank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC3ADCC288A24F100BE536E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CC3ADCE288A24F100BE536E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +132,7 @@
 			children = (
 				4C1E0F86288A36E6003A4FF2 /* Cells */,
 				4C1E0F67288A26C3003A4FF2 /* Post */,
+				4C1E0F9D288A94E2003A4FF2 /* PostDetail */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -166,6 +189,8 @@
 			children = (
 				4C1E0F8E288A379A003A4FF2 /* CustomCell.swift */,
 				4C1E0F8C288A377D003A4FF2 /* ProtocolCell.swift */,
+				4C1E0FB2288AEF1D003A4FF2 /* CancelCell */,
+				4C1E0FA8288AA54C003A4FF2 /* UserCell */,
 				4C1E0F90288A381A003A4FF2 /* PostCell */,
 				4C1E0F8B288A3731003A4FF2 /* SearchBarCell */,
 			);
@@ -188,6 +213,45 @@
 				4C1E0F92288A3831003A4FF2 /* PostCell.xib */,
 			);
 			path = PostCell;
+			sourceTree = "<group>";
+		};
+		4C1E0F9D288A94E2003A4FF2 /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4C1E0F9E288A951A003A4FF2 /* PostDetail.storyboard */,
+				4C1E0FA0288A952C003A4FF2 /* PostDetailViewController.swift */,
+				4C1E0FA2288A9538003A4FF2 /* PostDetailPresenter.swift */,
+				4C1E0FA4288A9549003A4FF2 /* PostDetailInteractor.swift */,
+				4C1E0FA6288A9557003A4FF2 /* PostDetailWireFrame.swift */,
+			);
+			path = PostDetail;
+			sourceTree = "<group>";
+		};
+		4C1E0FA8288AA54C003A4FF2 /* UserCell */ = {
+			isa = PBXGroup;
+			children = (
+				4C1E0FA9288AA56F003A4FF2 /* UserCell.swift */,
+				4C1E0FAA288AA56F003A4FF2 /* UserCell.xib */,
+			);
+			path = UserCell;
+			sourceTree = "<group>";
+		};
+		4C1E0FAD288AA712003A4FF2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4C1E0FAE288AA746003A4FF2 /* UIView+Extensions.swift */,
+				4C1E0FB0288AA7C9003A4FF2 /* Double+Extenions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4C1E0FB2288AEF1D003A4FF2 /* CancelCell */ = {
+			isa = PBXGroup;
+			children = (
+				4C1E0FB3288AEFE6003A4FF2 /* CancelCell.swift */,
+				4C1E0FB4288AEFE6003A4FF2 /* CancelCell.xib */,
+			);
+			path = CancelCell;
 			sourceTree = "<group>";
 		};
 		4CC3ADC0288A24F100BE536E = {
@@ -217,6 +281,7 @@
 				4C1E0F68288A271B003A4FF2 /* UseCase */,
 				4C1E0F76288A295C003A4FF2 /* Networking */,
 				4C1E0F7E288A2DF2003A4FF2 /* Model */,
+				4C1E0FAD288AA712003A4FF2 /* Utils */,
 				4CC3ADD2288A24F100BE536E /* Main.storyboard */,
 				4CC3ADD5288A24FB00BE536E /* Assets.xcassets */,
 				4CC3ADD7288A24FB00BE536E /* LaunchScreen.storyboard */,
@@ -305,7 +370,10 @@
 				4CC3ADD9288A24FB00BE536E /* LaunchScreen.storyboard in Resources */,
 				4C1E0F94288A3831003A4FF2 /* PostCell.xib in Resources */,
 				4CC3ADD6288A24FB00BE536E /* Assets.xcassets in Resources */,
+				4C1E0F9F288A951A003A4FF2 /* PostDetail.storyboard in Resources */,
+				4C1E0FAC288AA56F003A4FF2 /* UserCell.xib in Resources */,
 				4CC3ADD4288A24F100BE536E /* Main.storyboard in Resources */,
+				4C1E0FB6288AEFE6003A4FF2 /* CancelCell.xib in Resources */,
 				4C1E0F8A288A372B003A4FF2 /* SearchBarCell.xib in Resources */,
 				4C1E0F85288A328A003A4FF2 /* Post.storyboard in Resources */,
 			);
@@ -361,10 +429,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C1E0F74288A2843003A4FF2 /* PostViewController.swift in Sources */,
+				4C1E0FAF288AA746003A4FF2 /* UIView+Extensions.swift in Sources */,
 				4C1E0F96288A45E1003A4FF2 /* PostRequest.swift in Sources */,
 				4C1E0F63288A26AE003A4FF2 /* PostInteractor.swift in Sources */,
+				4C1E0FA1288A952C003A4FF2 /* PostDetailViewController.swift in Sources */,
 				4CC3ADCD288A24F100BE536E /* AppDelegate.swift in Sources */,
 				4C1E0F9C288A6C55003A4FF2 /* Links.swift in Sources */,
+				4C1E0FA3288A9538003A4FF2 /* PostDetailPresenter.swift in Sources */,
+				4C1E0FB1288AA7C9003A4FF2 /* Double+Extenions.swift in Sources */,
 				4C1E0F66288A26AE003A4FF2 /* PostWireFrame.swift in Sources */,
 				4C1E0F83288A2EE4003A4FF2 /* PostEndpoint.swift in Sources */,
 				4CC3ADCF288A24F100BE536E /* SceneDelegate.swift in Sources */,
@@ -372,12 +444,16 @@
 				4C1E0F6B288A2740003A4FF2 /* PostUseCase.swift in Sources */,
 				4C1E0F8F288A379A003A4FF2 /* CustomCell.swift in Sources */,
 				4C1E0F79288A2989003A4FF2 /* EndPoint.swift in Sources */,
+				4C1E0FAB288AA56F003A4FF2 /* UserCell.swift in Sources */,
 				4C1E0F60288A26AE003A4FF2 /* PostPresenter.swift in Sources */,
 				4C1E0F7D288A2D70003A4FF2 /* PostResponse.swift in Sources */,
 				4C1E0F98288A6B03003A4FF2 /* Meta.swift in Sources */,
+				4C1E0FA5288A9549003A4FF2 /* PostDetailInteractor.swift in Sources */,
 				4C1E0F81288A2E13003A4FF2 /* Post.swift in Sources */,
+				4C1E0FA7288A9557003A4FF2 /* PostDetailWireFrame.swift in Sources */,
 				4C1E0F6F288A27D6003A4FF2 /* InitViewControllerUseCase.swift in Sources */,
 				4C1E0F7B288A2A5B003A4FF2 /* PostService.swift in Sources */,
+				4C1E0FB5288AEFE6003A4FF2 /* CancelCell.swift in Sources */,
 				4C1E0F9A288A6C30003A4FF2 /* Pagination.swift in Sources */,
 				4C1E0F8D288A377D003A4FF2 /* ProtocolCell.swift in Sources */,
 				4C1E0F93288A3831003A4FF2 /* PostCell.swift in Sources */,

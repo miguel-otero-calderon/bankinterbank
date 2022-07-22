@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol PostViewControllerProtocol: class {
+protocol PostViewControllerProtocol: AnyObject {
     var presenter: PostPresenterProtocol? { get set }
     func getPost(meta:Meta?, posts:[Post]? , error:Error?)
 }
@@ -59,7 +59,7 @@ class PostViewController: UIViewController {
             ))
         }
     }
-    func loadTable() {        
+    func loadTable() {
         self.postTableView.reloadData()
     }
 }
@@ -157,6 +157,8 @@ extension PostViewController: SearchBarCellDelegate {
 }
 extension PostViewController: PostCellDelegate {
     func selected(cell: PostCell) {
-        
+        guard let post = cell.data?.post else { return }
+        let postDetailViewController = PostDetailWireFrame.createPostModule(post: post) as! PostDetailViewController
+        self.present(postDetailViewController, animated: true)        
     }
 }
